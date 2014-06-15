@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin-bottom: 10px
+}
+
+li {
+	display: inline;
+}
+
+.container {
+	width: 640px;
+	height: 640px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.default {
+	background: #FF9600; 
+	border: 1px solid #006CB2;
+}
+
+.square {
+	float: left;
+	display: inline-block;
+}
+
+
+.highlight {
+	background: #5CB200;
+	border: 1px solid #84FF00;
+}
+
+.random {
+	background: '';
+}
