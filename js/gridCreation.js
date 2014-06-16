@@ -27,14 +27,13 @@ $(document).ready(function() {
 
 function createGrid(n) { 
 	var squareSize = $('.container').width() / n - 2;
+	var gridHTML = [];
 
 	$('.wrap').empty();
 	for (var i = 0; i < n*n ; i++) {
-		$('.wrap').append($('<div></div>').addClass('square default').css({
-			'width': squareSize,
-			'height': squareSize
-		}));
+		gridHTML.push('<div class="square default" style="width:'+squareSize+'px; height:'+squareSize+'px;"></div>');
 	}
+	$('.wrap').append(gridHTML.join(''));
 	highlightHandler();
 };
 
